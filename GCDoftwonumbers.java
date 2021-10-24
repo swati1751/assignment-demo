@@ -1,31 +1,17 @@
-package calculator;
+public class GCDoftwonumbers
+{
+    public static void main(String[] args)
+    {
+        int x = 12, y = 8, gcd = 1;
 
-import java.util.Scanner;
-
-public class GCDoftwonumbers {
-
-    public static void main(String[] args) {
-
-        int num1, num2;
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Enter first number:");
-
-        num1 = (int) scanner.nextInt();
-
-        System.out.print("Enter second number:");
-
-        num2 = (int) scanner.nextInt();
-
-        scanner.close();
-        (num1 != num2) {
-            if (num1 > num2)
-                num1 = num1 - num2;
-            else
-                num2 = num2 - num1;
-
+        for(int i = 1; i <= x && i <= y; i++)
+        {
+            if(x%i==0 && y%i==0)
+                gcd = i;
         }
-
-        System.out.printf("GCD of given numbers is: %d", num2);
+        System.out.printf("GCD of %d and %d is: %d", x, y, gcd);
     }
+          
+  }
+
 
